@@ -56,7 +56,7 @@ class Song
     songname = filename.delete_suffix(".mp3")
     sngnm_arr = songname.split(" - ")
     puts "name" + sngnm_arr[1] +" artist "+sngnm_arr[0]
-    #newSong.name = sngnm_arr[0]
+    newSong.name = sngnm_arr[0]
     newSong.artist_name = sngnm_arr[1]
     newSong
   end
