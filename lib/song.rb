@@ -60,3 +60,5 @@ class Song
     newSong.artist_name = sngnm_arr[1]
   end
 end
+
+Song
