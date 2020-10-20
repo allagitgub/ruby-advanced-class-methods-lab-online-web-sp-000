@@ -60,6 +60,17 @@ class Song
     newSong.artist_name = sngnm_arr[0]
     newSong
   end
+
+  def self.create_from_filename(filename)
+    newSong = Song.new
+    songname = filename.delete_suffix(".mp3")
+    sngnm_arr = songname.split(" - ")
+    puts "name" + sngnm_arr[1] +" artist "+sngnm_arr[0]
+    newSong.name = sngnm_arr[1]
+    newSong.artist_name = sngnm_arr[0]
+    newSong.save
+    newSong
+  end
 end
 
 Song
